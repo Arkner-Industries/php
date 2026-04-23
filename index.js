@@ -8,7 +8,51 @@ servidor.use(express.json())
 servidor.get("/",(req,res)=>{
     res.send()             
 })
+
+servidor.get("/kled",(req,res)=>{
+    res.sendFile(path.join (ruta, "/campeon.html"))
+})
+
+servidor.get("/index",(req,res)=>{
+    res.sendFile(path.join(ruta, "/index.html"))
+})
+
+servidor.get("/trundle",(req,res)=>{
+    res.sendFile(path.join(ruta, "/trundle.html"))
+})
+
+servidor.get("/jax",(req,res)=>{
+    res.sendFile(path.join(ruta, "/jax.html"))
+})
+
+servidor.get("/login",(req,res)=>{
+    res.sendFile(path.join(ruta, "/login.html"))
+})
+
+
+
+
 servidor.post("/login",(req,res)=>{
     console.log(req.body)
     res.send("ok")
+})
+
+servidor.post("/login",(req,res)=>{
+    console.log(req.body)
+    res.send("")
+})
+
+servidor.post("/login",(req,res)=>{
+    console.log(req.body)
+    res.send("")
+})
+
+servidor.post("/login",(req,res)=>{
+    console.log(req.body)
+    res.send("")
+})
+
+servidor.post("/login",(req,res)=>{
+    console.log(req.body)
+    res.send("")
 })
