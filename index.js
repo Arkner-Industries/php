@@ -37,22 +37,22 @@ servidor.post("/login",(req,res)=>{
     res.send("ok")
 })
 
-servidor.post("/login",(req,res)=>{
+servidor.post("/darius",(req,res)=>{
     console.log(req.body)
-    res.send("")
+    res.send("Uf fantasmal ignite, bien de pito corto")
 })
 
-servidor.post("/login",(req,res)=>{
+servidor.post("/volibear",(req,res)=>{
     console.log(req.body)
-    res.send("")
+    res.send("Eres un parasito")
 })
 
-servidor.post("/login",(req,res)=>{
+servidor.post("/teemo",(req,res)=>{
     console.log(req.body)
-    res.send("")
+    res.send("De tantos campeones, eliges una rata que caga hongos")
 })
 
-servidor.post("/login",(req,res)=>{
+servidor.post("/yasuo",(req,res)=>{
     console.log(req.body)
-    res.send("")
+    res.send("En el late se gana, en efecto, tienes retraso")
 })
