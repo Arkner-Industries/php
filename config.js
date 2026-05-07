@@ -4,12 +4,13 @@ const ruta = path.join(__dirname,"frontend")               // "__dirname" sirve 
 const servidor = express()                                 //le paso la configuracion del servidor a la variable servidor
 servidor.listen(4000)                                      //El puerto del servidor
 
-const router = express.Router()
 
-servidor.use(router)
+
 servidor.use(express.static(ruta))
 servidor.use(express.json())
 
+const router = express.Router()
+servidor.use(router)
 module.exports={
     router,
 }

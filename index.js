@@ -1,4 +1,4 @@
-const router = require("./config.js")
+const { router } = require("./config.js")
 
 router.get("/",(req,res)=>{                              // ()=>{} funciones de llave
     res.send()             
