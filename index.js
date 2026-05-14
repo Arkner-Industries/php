@@ -1,7 +1,9 @@
-const { router } = require("./config.js")
 
-router.get("/",(req,res)=>{                              // ()=>{} funciones de llave
-    res.send()             
+const { router,ruta,path } = require("./config.js")
+const { usuarios } =require("./Usuarios.js")
+
+router.get("/",(req,res)=>{                              // ()=>{} funciones de flecha
+    res.render("index.hbs",{usuarios})             
 })
 
 router.get("/kled",(req,res)=>{
